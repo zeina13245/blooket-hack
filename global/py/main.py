@@ -46,19 +46,18 @@ def addTokens():
         try:
             r = requests.put(request_url, request_data, headers={
                              "authorization": authToken})
-            print(f"Rewarded {blooketName} 500 tokens")
+            print(f"Rewarded {blooketName} 300 XP and 500 Tokens.")
         except Exception as e:
             print(e)
     elif ltd[0].day != ltd[1].day + 1:
-        print(f"{blooketName} has already earned max tokens in the past 24 hours!")
+        print(f"{blooketName} has already earned the max tokens and/or max xp today!")
     elif (getCreatedDate().year, getCreatedDate().month, getCreatedDate().day) == (ltd[1].year, ltd[1].month, ltd[1].day):
         try:
             r = requests.put(request_url, request_data, headers={
                              "authorization": authToken})
-            print(f"Rewarded {blooketName} 500 tokens")
+            print(f"Rewarded {blooketName} 300 XP and 500 Tokens.")
         except Exception as e:
             print(e)
-
 
 while True:
     addTokens()
