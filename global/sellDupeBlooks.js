@@ -39,9 +39,9 @@ async function sellDupeBlooks() {
         });
 
         if (response.status == 200) {
-            alert('Sold blook: ' + blook);
+            console.log('Sold blook: ' + blook);
         } else {
-            alert('An error occured.')
+            console.log('An error occured.')
         };
     };
 };
