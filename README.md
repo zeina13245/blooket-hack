@@ -3,7 +3,7 @@
 # Blooket-Hack
 All of the cheats are based on a game mode.
 
-**If anything isn't working please make a issue after checking with the FAQ: https://github.com/glixzzy/blooket-hack/issues**
+**If anything isn't working please make a issue: https://github.com/glixzzy/blooket-hack/issues**
 
 # How to run
 
