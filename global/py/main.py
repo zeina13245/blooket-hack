@@ -31,7 +31,7 @@ def getCreatedDate():
     return datetime.datetime.strptime(r.json()["dateCreated"], "%Y-%m-%dT%H:%M:%SZ")
 
 
-def addTokens():
+def addCurrencies():
     ltd = getLastTokenDate()
     blooketName = getName(authToken)
 
@@ -60,5 +60,5 @@ def addTokens():
             print(e)
 
 while True:
-    addTokens()
+    addCurrencies()
     time.sleep(86400)
