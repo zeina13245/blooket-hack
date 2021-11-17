@@ -22,13 +22,13 @@ async function addCurrencies() {
         },
         body: JSON.stringify({
             addedTokens: tokens,
-            addedXp: 10000,
+            addedXp: 300,
             name: await getName(myToken)
         })
     });
 
     if (response.status == 200) {
-        alert(`${tokens} tokens and 10000 XP added to your account!`);
+        alert(`${tokens} tokens and 300 XP added to your account!`);
     } else {
         alert('An error occured.');
     };
